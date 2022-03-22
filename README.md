@@ -1,2 +1,2 @@
-# hip
+# HiP
 Implementation of Hierarchical Perceiver
