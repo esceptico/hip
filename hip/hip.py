@@ -1,7 +1,7 @@
 from torch import nn
 
-from hip import HiPConfig
 from hip.block import PerceiverBlock
+from hip.config import HiPConfig
 
 
 class HiP(nn.Module):
