@@ -89,7 +89,7 @@ class MultiHeadAttention(nn.Module):
         # (..., n_heads, seq_len, head_dim) -> (..., seq_len, hid)
         *dims, n_heads, seq, hid = weighted.size()
         weighted = weighted.transpose(-3, -2)
-        weighted = weighted.view(*dims, seq, n_heads * hid)
+        weighted = weighted.reshape(*dims, seq, n_heads * hid)
         return self.projection(weighted)
 
 
